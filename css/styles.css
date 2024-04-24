@@ -2,6 +2,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #fff;
+  overflow-x: hidden;
 }
 
 a {
@@ -538,7 +539,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 48px 24px;
-  padding-bottom: 32px;
   flex-direction: column;
 }
 
@@ -961,12 +961,12 @@ img {
 .modal-btn-sbm:focus {
   background-color: #404bbf;
 }
-.modal-check:checked + .check-text span {
+.modal-check:checked + .check-text .check-wrap {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
 }
-.modal-check:focus + .check-text span {
+.modal-check:focus + .check-text .check-wrap {
   border-color: #4d5ae5;
 }
 
@@ -1129,6 +1129,10 @@ img {
 }
 .mobile-contact {
   margin-bottom: 48px;
+}
+
+.active{
+  color:#4d5ae5;
 }
 
 
